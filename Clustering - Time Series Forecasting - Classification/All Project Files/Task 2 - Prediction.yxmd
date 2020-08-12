@@ -1,0 +1,650 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>clustered analysis.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Sum_Dry_Grocery" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Sum_Dairy" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Sum_Frozen_Food" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Sum_Meat" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Sum_Produce" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Sum_Floral" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Sum_Deli" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Sum_Bakery" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Sum_General_Merchandise" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Total_Sales" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Pct_Sum_Dry_Grocery" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Pct_Sum_Dairy" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Pct_Sum_Frozen_food" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Pct_Meat" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Pct_Produce" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Pct_Floral" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Pct_Deli" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Pct_Bakery" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Pct_General_Merchandise" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+            <Field name="Cluster" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\clustered analysis.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storedemographicdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age0to9" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age10to17" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age18to24" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age25to29" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age30to39" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age40to49" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age50to64" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="Age65Plus" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdLTHS" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdHSGrad" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdSomeCol" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdAssociate" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdBachelor" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdMaster" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdProfSchl" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="EdDoctorate" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz1Per" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz2Per" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz3Per" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz4Per" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHSz5PlusPer" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHIncU25K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc25Kto50K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc50Kto75K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc75Kto100K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc100Kto150K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc150Kto250K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HHInc250KPlus" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopAsian" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopBlack" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopHispanic" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopMulti" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopNativeAmer" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopOther" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopPacIsl" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopWhite" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal0to100K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal100Kto200K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal200Kto300K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal300Kto400K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal400Kto500K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal500Kto750K" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="HVal750KPlus" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+            <Field name="PopDens" size="254" source="File: C:\Users\INBLR02-WIN-027\Documents\Personal\Projects\Freelance_work\Capstone Project\All Project Files\storedemographicdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="186" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="294" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Store" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Store" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Store" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_Dry_Grocery" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_Dairy" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_Frozen_Food" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_Meat" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_Produce" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_Floral" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_Deli" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_Bakery" selected="False" input="Left_" />
+                <SelectField field="Left_Sum_General_Merchandise" selected="False" input="Left_" />
+                <SelectField field="Left_Total_Sales" selected="False" input="Left_" />
+                <SelectField field="Left_Pct_Sum_Dry_Grocery" selected="False" input="Left_" />
+                <SelectField field="Left_Pct_Sum_Dairy" selected="False" input="Left_" />
+                <SelectField field="Left_Pct_Sum_Frozen_food" selected="False" input="Left_" />
+                <SelectField field="Left_Pct_Meat" selected="False" input="Left_" />
+                <SelectField field="Left_Pct_Produce" selected="False" input="Left_" />
+                <SelectField field="Left_Pct_Floral" selected="False" input="Left_" />
+                <SelectField field="Left_Pct_Deli" selected="False" input="Left_" />
+                <SelectField field="Left_Pct_Bakery" selected="False" input="Left_" />
+                <SelectField field="Left_Pct_General_Merchandise" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings>
+        <Position x="378" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="estimation pct">80</Value>
+          <Value name="validation pct">20</Value>
+          <Value name="rand seed">3</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Create_Samples.yxmc" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings>
+        <Position x="534" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="model.name">Boosting</Value>
+          <Value name="select.target">Cluster</Value>
+          <Value name="select.predictors">Cluster=False,Store=False,Age0to9=True,Age10to17=True,Age18to24=True,Age25to29=True,Age30to39=True,Age40to49=True,Age50to64=True,Age65Plus=True,EdLTHS=True,EdHSGrad=True,EdSomeCol=True,EdAssociate=True,EdBachelor=True,EdMaster=True,EdProfSchl=True,EdDoctorate=True,HHSz1Per=True,HHSz2Per=True,HHSz3Per=True,HHSz4Per=True,HHSz5PlusPer=True,HHIncU25K=True,HHInc25Kto50K=True,HHInc50Kto75K=True,HHInc75Kto100K=True,HHInc100Kto150K=True,HHInc150Kto250K=True,HHInc250KPlus=True,PopAsian=True,PopBlack=True,PopHispanic=True,PopMulti=True,PopNativeAmer=True,PopOther=True,PopPacIsl=True,PopWhite=True,HVal0to100K=True,HVal100Kto200K=True,HVal200Kto300K=True,HVal300Kto400K=True,HVal400Kto500K=True,HVal500Kto750K=True,HVal750KPlus=True,PopDens=True</Value>
+          <Value name="use.weights">False</Value>
+          <Value name="select.weights" />
+          <Value name="marginal.plots">False</Value>
+          <Value name="plot.min.importance">2.5</Value>
+          <Value name="type.distribution">False</Value>
+          <Value name="type.continuous">True</Value>
+          <Value name="dist.gaussian">True</Value>
+          <Value name="dist.laplace">False</Value>
+          <Value name="dist.t">False</Value>
+          <Value name="t.df">4</Value>
+          <Value name="type.count">False</Value>
+          <Value name="type.binomial">False</Value>
+          <Value name="dist.bernoulli">True</Value>
+          <Value name="dist.adaboost">False</Value>
+          <Value name="type.multinomial">False</Value>
+          <Value name="n.trees">4000</Value>
+          <Value name="assess.cv">True</Value>
+          <Value name="num.folds">5</Value>
+          <Value name="n.cores">1</Value>
+          <Value name="assess.test">False</Value>
+          <Value name="train.fraction">50.0</Value>
+          <Value name="assess.oob">False</Value>
+          <Value name="bag.fraction">50.0</Value>
+          <Value name="shrinkage">0.0020</Value>
+          <Value name="interaction.depth">1</Value>
+          <Value name="n.minobsinnode">10</Value>
+          <Value name="rand.seed">1</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Boosted_Model.yxmc" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="Decision_Tree">
+        <Position x="534" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="curPage">Home</Value>
+          <Value name="curTab">model</Value>
+          <Value name="curToggle">toggle-main</Value>
+          <Value name="display.static">True</Value>
+          <Value name="set_seed_cv">True</Value>
+          <Value name="showClassificationCV">True</Value>
+          <Value name="showWhenTreePlotAvailable">True</Value>
+          <Value name="use.gini">True</Value>
+          <Value name="use.information">False</Value>
+          <Value name="usesurrogate.0">True</Value>
+          <Value name="usesurrogate.1">False</Value>
+          <Value name="usesurrogate.2">False</Value>
+          <Value name="total.correct">True</Value>
+          <Value name="percent.correct">False</Value>
+          <Value name="model_type">auto</Value>
+          <Value name="auto">True</Value>
+          <Value name="classification">False</Value>
+          <Value name="regression">False</Value>
+          <Value name="tree_summary">Counts</Value>
+          <Value name="Counts">True</Value>
+          <Value name="Proportions">False</Value>
+          <Value name="tree_plot_size">tree.inches</Value>
+          <Value name="tree.inches">True</Value>
+          <Value name="tree.centimeters">False</Value>
+          <Value name="pruning_plot_size">prune.inches</Value>
+          <Value name="prune.inches">True</Value>
+          <Value name="prune.centimeters">False</Value>
+          <Value name="Model Name">Decision_Tree</Value>
+          <Value name="Y Var">Cluster</Value>
+          <Value name="X Vars">Age0to9,Age10to17,Age18to24,Age25to29,Age30to39,Age40to49,Age50to64,Age65Plus,EdLTHS,EdHSGrad,EdSomeCol,EdAssociate,EdBachelor,EdMaster,EdProfSchl,EdDoctorate,HHSz1Per,HHSz2Per,HHSz3Per,HHSz4Per,HHSz5PlusPer,HHIncU25K,HHInc25Kto50K,HHInc50Kto75K,HHInc75Kto100K,HHInc100Kto150K,HHInc150Kto250K,HHInc250KPlus,PopAsian,PopBlack,PopHispanic,PopMulti,PopNativeAmer,PopOther,PopPacIsl,PopWhite,HVal0to100K,HVal100Kto200K,HVal200Kto300K,HVal300Kto400K,HVal400Kto500K,HVal500Kto750K,HVal750KPlus,PopDens</Value>
+          <Value name="model.algorithm">rpart</Value>
+          <Value name="posClass">
+          </Value>
+          <Value name="use.weights">False</Value>
+          <Value name="select.weights" />
+          <Value name="splitting_criteria">use.gini</Value>
+          <Value name="surrogate_use">usesurrogate.0</Value>
+          <Value name="surrogate_split_criteria">total.correct</Value>
+          <Value name="min.split">20</Value>
+          <Value name="min.bucket">7</Value>
+          <Value name="xval.folds">10</Value>
+          <Value name="max.depth">20</Value>
+          <Value name="max.bins">
+          </Value>
+          <Value name="set_cp">False</Value>
+          <Value name="cp">0</Value>
+          <Value name="rules">False</Value>
+          <Value name="bands_check">False</Value>
+          <Value name="bands">10</Value>
+          <Value name="subset">False</Value>
+          <Value name="winnow">False</Value>
+          <Value name="GlobalPruning">False</Value>
+          <Value name="fuzzyThreshold">False</Value>
+          <Value name="earlyStopping">False</Value>
+          <Value name="trials">1</Value>
+          <Value name="CF">0.25</Value>
+          <Value name="minCases">2</Value>
+          <Value name="sample">0</Value>
+          <Value name="seed">1</Value>
+          <Value name="use_cv">False</Value>
+          <Value name="numberFolds">5</Value>
+          <Value name="numberTrials">3</Value>
+          <Value name="stratified">False</Value>
+          <Value name="cv_seed">1</Value>
+          <Value name="tree.plot">False</Value>
+          <Value name="Branch Dist">False</Value>
+          <Value name="tree.in.w">5.5</Value>
+          <Value name="tree.in.h">5.5</Value>
+          <Value name="tree.cm.w">13</Value>
+          <Value name="tree.cm.h">14.95</Value>
+          <Value name="tree.graph.resolution">1x</Value>
+          <Value name="tree.pointsize">8</Value>
+          <Value name="prune.plot">False</Value>
+          <Value name="prune.in.w">5.5</Value>
+          <Value name="prune.in.h">5.5</Value>
+          <Value name="prune.cm.w">13</Value>
+          <Value name="prune.cm.h">14.95</Value>
+          <Value name="prune.graph.resolution">1x</Value>
+          <Value name="prune.pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Decision_Tree</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" EngineDll="Macro" EngineDllEntryPoint="Decision_Tree/Supporting_Macros/Decision_Tree.yxmc" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="750" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings>
+        <Position x="846" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="target.level" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="predictions">
+          <RecordInfo>
+            <Field name="Actual" source="R-Data:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="error_measures">
+          <RecordInfo>
+            <Field name="Model" size="254" source="R-Data:" type="V_String" />
+            <Field name="Correlation" source="R-Data:" type="Double" />
+            <Field name="RMSE" source="R-Data:" type="Double" />
+            <Field name="MAE" source="R-Data:" type="Double" />
+            <Field name="MPE" source="R-Data:" type="Double" />
+            <Field name="MAPE" source="R-Data:" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro="..\..\Creditworthiness - Case Study\Creditworthiness\Model Comparison.yxmc" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1014" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_7984_27a305ed23c349408e5d743fafd8c213_\Engine_1708_5b16c4d206fc4511b996aad6ebbdd79c_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1014" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_7984_27a305ed23c349408e5d743fafd8c213_\Engine_1708_33116124132545cabd5b9447d4dccd89_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1014" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_7984_27a305ed23c349408e5d743fafd8c213_\Engine_1708_d38fde4887854643ac1bbe2615292c81_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings>
+        <Position x="534" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Model Name">RandomForest</Value>
+          <Value name="Y Var">Cluster</Value>
+          <Value name="X Vars">Age0to9 + Age10to17 + Age18to24 + Age25to29 + Age30to39 + Age40to49 + Age50to64 + Age65Plus + EdLTHS + EdHSGrad + EdSomeCol + EdAssociate + EdBachelor + EdMaster + EdProfSchl + EdDoctorate + HHSz1Per + HHSz2Per + HHSz3Per + HHSz4Per + HHSz5PlusPer + HHIncU25K + HHInc25Kto50K + HHInc50Kto75K + HHInc75Kto100K + HHInc100Kto150K + HHInc150Kto250K + HHInc250KPlus + PopAsian + PopBlack + PopHispanic + PopMulti + PopNativeAmer + PopOther + PopPacIsl + PopWhite + HVal0to100K + HVal100Kto200K + HVal200Kto300K + HVal300Kto400K + HVal400Kto500K + HVal500Kto750K + HVal750KPlus + PopDens</Value>
+          <Value name="Num Trees">500</Value>
+          <Value name="Custom Num Vars">False</Value>
+          <Value name="Num Vars">3</Value>
+          <Value name="model.size">False</Value>
+          <Value name="total.nodes">100</Value>
+          <Value name="max.depth">10</Value>
+          <Value name="node.size">5</Value>
+          <Value name="replace">True</Value>
+          <Value name="samp.rate">100</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Forest_Model.yxmc" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Estimation" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Estimation" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Validation" />
+      <Destination ToolID="13" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Models" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Estimation" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="error_measures" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Report" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="predictions" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Task 2 - Prediction</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

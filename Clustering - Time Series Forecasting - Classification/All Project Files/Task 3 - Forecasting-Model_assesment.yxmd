@@ -1,0 +1,830 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="6" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">storesalesdata.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>storesalesdata.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="Day" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="Month" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="Year" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="Dry_Grocery" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="Dairy" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="Frozen_Food" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="Meat" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="Produce" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="Floral" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="Deli" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="Bakery" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+            <Field name="General_Merchandise" size="254" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="114" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_13868_74751d40d5ba40358e5f09b04d7d42fc_\Engine_16736_2a94255587de40f4891de7b54999c42b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="198" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Month" action="GroupBy" rename="Month" />
+            <SummarizeField field="Year" action="GroupBy" rename="Year" />
+            <SummarizeField field="Produce" action="Sum" rename="Sum_Produce" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="114" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Store" selected="True" />
+            <Field field="Day" selected="True" />
+            <Field field="Month" selected="True" />
+            <Field field="Year" selected="True" />
+            <Field field="Dry_Grocery" selected="True" />
+            <Field field="Dairy" selected="True" />
+            <Field field="Frozen_Food" selected="True" />
+            <Field field="Meat" selected="True" />
+            <Field field="Produce" selected="True" />
+            <Field field="Floral" selected="True" />
+            <Field field="Deli" selected="True" />
+            <Field field="Bakery" selected="True" />
+            <Field field="General_Merchandise" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Store" size="5" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="String" />
+            <Field name="Day" size="2" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="String" />
+            <Field name="Month" size="2" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="String" />
+            <Field name="Year" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="Int16" />
+            <Field name="Dry_Grocery" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="Double" />
+            <Field name="Dairy" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="Double" />
+            <Field name="Frozen_Food" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="Double" />
+            <Field name="Meat" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="Double" />
+            <Field name="Produce" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="Double" />
+            <Field name="Floral" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="Double" />
+            <Field name="Deli" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="Double" />
+            <Field name="Bakery" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="Double" />
+            <Field name="General_Merchandise" source="File: C:\Users\INBLR02-WIN-027\Downloads\Combining-Predictive-Techniques-master\Combining-Predictive-Techniques-master\storesalesdata.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings>
+        <Position x="702" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="target_field">Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="ts_plot">True</Value>
+          <Value name="seas_plot">False</Value>
+          <Value name="seas_dev_plot">False</Value>
+          <Value name="acf_plot">False</Value>
+          <Value name="pacf_plot">False</Value>
+          <Value name="decomp_plot">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Plot.yxmc" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="822" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_13868_74751d40d5ba40358e5f09b04d7d42fc_\Engine_16736_a855d56e0f3e46bc828412b0396dbe55_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="582" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Year" order="Ascending" />
+            <Field field="Month" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Year - Ascending
+Month - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="834" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_13868_74751d40d5ba40358e5f09b04d7d42fc_\Engine_16736_df2758872fe04341a37424b187ae301e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="834" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_13868_74751d40d5ba40358e5f09b04d7d42fc_\Engine_16736_0b97dd49e8e94fec985f9fcdf774b31f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings>
+        <Position x="1158" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\TS_Compare.yxmc" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1278" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_13868_74751d40d5ba40358e5f09b04d7d42fc_\Engine_16736_07e6ae6d13954cdebbf3690e9dc85bee_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1278" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_13868_74751d40d5ba40358e5f09b04d7d42fc_\Engine_16736_131b4550972b4ce7bb6cae3c21fef060_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="486" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Month] &gt; 6 AND [Year]&gt;2014</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Month] &gt; 6 AND [Year]&gt;2014</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="294" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Year" order="Ascending" />
+            <Field field="Month" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Year - Ascending
+Month - Ascending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="390" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Month" selected="True" type="Int32" size="4" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1050" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings>
+        <Position x="702" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ARIMA_100_110</Value>
+          <Value name="target_field">Sum_Produce</Value>
+          <Value name="use_covar">False</Value>
+          <Value name="covars">""</Value>
+          <Value name="use_covar_mean">True</Value>
+          <Value name="use_covar_diff">False</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="custom_auto">False</Value>
+          <Value name="first_dif">False</Value>
+          <Value name="level_first_dif">0</Value>
+          <Value name="max_p">2</Value>
+          <Value name="max_q">2</Value>
+          <Value name="seas_dif">False</Value>
+          <Value name="level_seas_dif">0</Value>
+          <Value name="s_max_P">1</Value>
+          <Value name="s_max_Q">1</Value>
+          <Value name="ic_aic">False</Value>
+          <Value name="ic_aicc">True</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="full_enum">False</Value>
+          <Value name="max_order">5</Value>
+          <Value name="m_core">False</Value>
+          <Value name="drift">True</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="full_custom">True</Value>
+          <Value name="p">1</Value>
+          <Value name="d">0</Value>
+          <Value name="q">0</Value>
+          <Value name="S_P">1</Value>
+          <Value name="S_D">1</Value>
+          <Value name="S_Q">0</Value>
+          <Value name="m_drift">False</Value>
+          <Value name="m_box_cox">False</Value>
+          <Value name="m_lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">1980</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">6</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.00</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ARIMA.yxmc" />
+    </Node>
+    <Node ToolID="61">
+      <GuiSettings>
+        <Position x="834" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="mod_name">ETS_MNM</Value>
+          <Value name="target_field">Sum_Produce</Value>
+          <Value name="freq_hourly">False</Value>
+          <Value name="freq_daily">False</Value>
+          <Value name="freq_weekdays">False</Value>
+          <Value name="freq_weekly">False</Value>
+          <Value name="freq_monthly">True</Value>
+          <Value name="freq_quarterly">False</Value>
+          <Value name="freq_annually">False</Value>
+          <Value name="freq_other">False</Value>
+          <Value name="error_auto">False</Value>
+          <Value name="error_add">False</Value>
+          <Value name="error_mult">True</Value>
+          <Value name="trend_type_auto">False</Value>
+          <Value name="trend_type_add">False</Value>
+          <Value name="trend_type_mult">False</Value>
+          <Value name="trend_type_none">True</Value>
+          <Value name="trend_damp_auto">True</Value>
+          <Value name="trend_damp_yes">False</Value>
+          <Value name="trend_damp_no">False</Value>
+          <Value name="seas_auto">False</Value>
+          <Value name="seas_add">False</Value>
+          <Value name="seas_mult">True</Value>
+          <Value name="seas_none">False</Value>
+          <Value name="ic_auto">True</Value>
+          <Value name="ic_aic">False</Value>
+          <Value name="ic_aicc">False</Value>
+          <Value name="ic_bic">False</Value>
+          <Value name="box_cox">False</Value>
+          <Value name="lambda">0.00</Value>
+          <Value name="series_start">False</Value>
+          <Value name="start_year">2012</Value>
+          <Value name="start_month_qtr">1</Value>
+          <Value name="forecast_periods">6</Value>
+          <Value name="alteryx.week.US">True</Value>
+          <Value name="alteryx.week.UK">False</Value>
+          <Value name="alteryx.week.ISO8601">False</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+          <Value name="pointsize">10</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\ETS.yxmc" />
+    </Node>
+    <Node ToolID="62">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="510" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_13868_74751d40d5ba40358e5f09b04d7d42fc_\Engine_16736_10eb46430358426f8a4a5b51eb35d353_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="63">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_13868_74751d40d5ba40358e5f09b04d7d42fc_\Engine_16736_b3d636ed867045bf89787c203c896d30_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="822" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_13868_74751d40d5ba40358e5f09b04d7d42fc_\Engine_16736_8fae4c5e148f4f1fa0a39d1c804ace7b_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1278" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\INBLR0~1\AppData\Local\Temp\Engine_13868_74751d40d5ba40358e5f09b04d7d42fc_\Engine_16736_c02de30295fe4db2a72d84a196b3c52c_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Interactive" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="64" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="61" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Interactive" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Report" />
+      <Destination ToolID="44" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="False" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="True" />
+      <Destination ToolID="41" Connection="Right Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="41" Connection="Left Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="49" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="49" Connection="Output" />
+      <Destination ToolID="47" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="51" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection name="#8">
+      <Origin ToolID="61" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Report" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Interactive" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Interactive" />
+      <Destination ToolID="62" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Report" />
+      <Destination ToolID="63" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ProjectWorkflow3</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
